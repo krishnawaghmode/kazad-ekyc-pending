@@ -161,16 +161,18 @@
     box-sizing: border-box;
     background: #f0f0f0;
 /*    padding: 10px 0;*/
+    position: relative;
   }
   
   .marquee-content {
     display: inline-block;
-    animation: marquee 10s linear infinite;
+    padding-left: 100%;
+    animation: marquee 20s linear infinite;
   }
   
   @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
   }
 </style>
 </head>
@@ -203,7 +205,7 @@
 
     <div class="marquee">
   <div class="marquee-content">
-    रेशनकार्डची सर्व कामे ऑनलाईन करून मिळतील - नवीन मतदान कार्ड व दुरुस्ती - आधारकार्ड तुमच्या बँक खात्याशी लिंक करणे - ई-पीक पाहणी - शेतकरी ओळखपत्र आरोही इंटरप्रायजेस बोरी रोड काझड
+    रेशनकार्डची सर्व कामे ऑनलाईन करून मिळतील - नवीन मतदान कार्ड व दुरुस्ती - आधारकार्ड तुमच्या बँक खात्याशी लिंक करणे - ई-पीक पाहणी - शेतकरी ओळखपत्र :- <strong>आरोही इंटरप्रायजेस बोरी रोड काझड</strong>
   </div>
 </div>
 
@@ -219,7 +221,7 @@
         </div>
     </div>
     
-    <div class="results-count" id="results-count">Showing all items</div>
+    <div class="results-count" id="results-count">यादी दाखवत आहे...</div>
     
     <div class="table-container">
         <table id="data-table">
